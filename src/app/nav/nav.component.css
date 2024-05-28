@@ -1,0 +1,52 @@
+html{
+    color:#393D72;
+
+}
+#nav-trans {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 13px;
+    
+}
+#container-color{
+    background-color:#FFFFFF ;
+    gap: 50px;
+}
+.navbar-brand img {
+    width: 210px;
+    height: 80px;
+}
+
+.logo{
+    max-width: 80%;
+    height: auto;
+
+}
+
+a{
+    font-weight: bold;
+}
+
+.carousel-letra{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    left: -6;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.carousel-letra-1{
+    position: absolute;
+    
+    top: 30%;
+    left: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    border-color: black;
+}
