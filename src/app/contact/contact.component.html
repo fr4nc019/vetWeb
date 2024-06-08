@@ -4,55 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./contact.component.css">
+  </head>
 <body>
     <div>
-       
-      
-        <div class="container">
+        <div id="banner">
+          <div style="text-align: center;">
+            <img src="https://media.baamboozle.com/uploads/images/12668/1606810637_124777" class="d-flex" alt="">
+            <div>
+              <h1 >Contáctanos</h1>
+            </div>
+          </div>
+        </div>
+        <div id="card" class="container">
             <div class="row py-5 d-flex justify-content-center"> 
-              <div class="card text-center mb-3 mx-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Correo Electrónico</h5>
-                  <p class="card-text">MascotVet.gmail.com</p> 
-                  <p class="card-text">MascotVetUrgencias.gmail.com</p>
+              <div class="col-xl-3 col-lg-6 col-md-6 justify-content-center">
+                <div class="text-center mb-3 mx-3" >
+                  <div class="card-body">
+                    <i class="bi bi-envelope icon"></i>
+                    <h5 class="card-title py-2">Correo Electrónico</h5>
+                    <p class="card-text">MascotVet.gmail.com</p> 
+                    <p class="card-text">MascotVetUrgencias.gmail.com</p>
+                  </div>
                 </div>
               </div>
-              <div class="card text-center mb-3 mx-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Número Telefónico</h5>
-                  <p class="card-text">+51 954 617 658</p>
-                  <p class="card-text">+51 949 096 088</p>                
+              <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="text-center mb-3 mx-3" >
+                  <div class="card-body">
+                    <i class="bi bi-telephone icon"></i>
+                    <h5 class="card-title py-2">Número Telefónico</h5>
+                    <p class="card-text">+51 954 617 658</p>
+                    <p class="card-text">+51 949 096 088</p>                
+                  </div>
                 </div>
               </div>
-              <div class="card text-center mb-3 mx-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Dirección</h5>
-                  <p class="card-text">Av. Alfredo Benavides #778, Lima-Perú</p>
+              <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="text-center mb-3 mx-3" >
+                  <div class="card-body">
+                    <i class="bi bi-pin-map icon"></i>
+                    <h5 class="card-title py-2">Dirección</h5>
+                    <p class="card-text">Av. Alfredo Benavides #778, Lima-Perú</p>
+                    <p class="card-text">Av. La Fontana #243, Lima-Perú</p>
+                  </div>
                 </div>
               </div>
-              <div class="card text-center mb-3 mx-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Redes Sociales</h5>
-                  <p class="card-text">fb.com/webexample</p>
-                  <p class="card-text">tw.com/webexample</p>
+              <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="text-center mb-3 mx-3" >
+                  <div class="card-body">
+                    <i class="bi bi-send icon"></i>
+                    <h5 class="card-title py-2">Redes Sociales</h5>
+                    <p class="card-text">fb.com/webexample</p>
+                    <p class="card-text">tw.com/webexample</p>
+                  </div>
                 </div>
               </div>
             </div>  
         </div>
-        <div class="container my-3">
-          <div id="formulario" style="text-align: center;">
-            <h2>Póngase en contácto con nuestro equipo</h2>
+        <div id="form" class="container-fluid " style="text-align: center;">
+          <div class="mx-5 py-5">
+            <h2 class="py-4">Póngase en contácto con nuestro equipo</h2>
             <form class="row g-3 needs-validation" novalidate>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Nombre</label>
+              <div class="col-md-12 col-lg-4">
+                <label for="validationCustom01" class="form-label">Nombre <i class="bi bi-person"></i></label>
                 <input type="text" class="form-control" id="validationCustom01" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
-              <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Correo Electrónico</label>
+              <div class="col-md-12 col-lg-4">
+                <label for="validationCustomUsername" class="form-label">Correo Electrónico <i class="bi bi-envelope-at"></i></label>
                 <div class="input-group has-validation">
                   <span class="input-group-text" id="inputGroupPrepend"></span>
                   <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
@@ -61,8 +83,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <label for="validationCustom04" class="form-label">Motivo de Interés</label>
+              <div class="col-md-12 col-lg-4">
+                <label for="validationCustom04" class="form-label">Motivo de Interés<i class="bi bi-arrow-down"></i></label>
                 <select class="form-select" id="validationCustom04" required>
                   <option selected  value="">Consulta Veterinaria</option>
                   <option>Grooming</option>
@@ -72,22 +94,22 @@
                   Please select a valid state.
                 </div>
               </div>
-              <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">Número Telefónico</label>
+              <div class="col-md-12 col-lg-6">
+                <label for="validationCustom03" class="form-label">Número Telefónico <i class="bi bi-whatsapp"></i></label>
                 <input type="text" class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
                   Please provide a valid city.
                 </div>
               </div>
-              <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">Distrito</label>
+              <div class="col-md-12 col-lg-6">
+                <label for="validationCustom03" class="form-label">Distrito <i class="bi bi-pin"></i></label>
                 <input type="text" class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
                   Please provide a valid city.
                 </div>
               </div>
               <div class="col-md-12">
-                <label for="validationCustom03" class="form-label">Mensaje</label>
+                <label for="validationCustom03" class="form-label">Mensaje <i class="bi bi-pencil"></i></label>
                 <input type="text" class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
                   Please provide a valid city.
@@ -104,40 +126,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar Ahora</button>
+              <div class="col-12 py-4">
+                <button class="btn py-2 px-3 button-pink" type="submit">Enviar Ahora <i class="bi bi-arrow-right-circle"></i></button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.805995238918!2d-77.02741658860593!3d-12.125422688068017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c605ea5e1%3A0x17328a8b49d37914!2sISIL%20-%20Miraflores!5e0!3m2!1ses!2spe!4v1715719171572!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="map" class="container-fluid" style="margin: 0; padding: 0;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.805995238918!2d-77.02741658860593!3d-12.125422688068017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c605ea5e1%3A0x17328a8b49d37914!2sISIL%20-%20Miraflores!5e0!3m2!1ses!2spe!4v1715719171572!5m2!1ses!2spe" width="100%" height="450px" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <h3>Nuestras Paginas</h3>
-            <h5>Home</h5>
-            <h5>Servicios</h5>
-            <h5>Adopción</h5>
-            <h5>Contáctanos</h5>
-          </div>
-          <div class="col-2">
-            <h3>Soporte</h3>
-            <h5>Servicio de Grooming</h5>
-            <h5>Servicio de Veterinaria</h5>
-            <h5>Adopción de Mascota</h5>
-          </div>
-          <div class="col-4">
-            <h3>Nosotros</h3>
-            <p>Somos una Veterinaria apasioonada por el cuidado de las mascotas. Buscamos ofrecer el mejor servicio para tú comodidad y la de tu mascota. Ofrecemos ambientes de atención especializados para las especialidades de vetereniaria y grooming. </p>
-          </div>
-         
-        </div>
-      </div>
-
      
-    
 </body>
 </html>

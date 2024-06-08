@@ -1,7 +1,50 @@
-<div class="container">
-    <footer class="footer mt-auto py-3 bg-dark text-white">
-      <div class="container">
-        <span class="text-muted">© 2024 MascotVet</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./footer.component.css">
+</head>
+<body>
+  <footer class="container-fluid" style="margin: 0; padding: 0;">
+    <div class="row mx-5 py-5 px-3">
+      <div class="col-xl-2 col-lg-6 col-md-6 py-2">
+        <h3 class="py-2">Nuestras Paginas</h3>
+        <h5>Home</h5>
+        <h5>Servicios</h5>
+        <h5>Adopción</h5>
+        <h5>Contáctanos</h5>
       </div>
-    </footer>
-  </div>
+      <div class="col-xl-2 col-lg-6 col-md-6 py-2">
+        <h3 class="py-2">Soporte</h3>
+        <h5>Servicio de Grooming</h5>
+        <h5>Servicio de Veterinaria</h5>
+        <h5>Adopción de Mascota</h5>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 py-2">
+        <h3 class="py-2">Nosotros</h3>
+        <p>Somos una Veterinaria apasioonada por el cuidado de las mascotas. Buscamos ofrecer el mejor servicio para tú comodidad y la de tu mascota. Ofrecemos ambientes de atención especializados para las especialidades de vetereniaria y grooming. </p>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 py-2">
+        <h3 class="py-2">Contáctanos</h3>
+          <label for="validationCustom01" class="form-label" style="color:white;">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <label for="validationCustomUsername" class="form-label" style="color:white;">Correo Electrónico</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+            <div class="col-12 py-4">
+              <button class="btn py-2 px-3 button-pink" type="submit">Enviar Ahora <i class="bi bi-arrow-right-circle"></i></button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

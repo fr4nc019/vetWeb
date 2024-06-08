@@ -1,7 +1,7 @@
 <nav id="nav-trans" class="navbar navbar-expand-lg navbar-light">
   <div id="container-color" class="container">
       <a class="navbar-brand" href="#">
-          <img src="assets/imgs/logoMascotVet.jpg" alt="Logo">
+          <img src="assets/imgs/logoMascotVet.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,43 +21,52 @@
                   ariaCurrentWhenActive="page" class="nav-link" >Contact</a>
               </li>
               <li class="nav-item">
-                <a routerLink='/login' routerLinkActive="active" 
-                  ariaCurrentWhenActive="page" class="nav-link" >Login</a>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h3 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h3>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <form id="formInsert"> 
-                            <div class="modal-body">
-                                <div class="mb-3">
-                    
-                                    <input type="text" class="form-control" placeholder="Nombre" id="txtNombre">
-                                </div>
-                                <div class="mb-3">
-                    
-                                    <input type="text" class="form-control" placeholder="Usuario" id="txtUsuario">
-                                </div>
-                                <div class="mb-3">
-                    
-                                    <input type="text" class="form-control" placeholder="Contrasena" id="txtcontrasena">
-                                </div>
-                              </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                              <button type="submit" class="btn btn-primary">Guardar</button>
-                            </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+                <a routerLink='/userprofile' routerLinkActive="active" 
+                ariaCurrentWhenActive="page" class="nav-link" >UserProfile</a>
             </li>
+
+            <div class="btn-login">
+              <li class="nav-item">
+            
+                <a mat-raised-button 
+                ariaCurrentWhenActive="page" class="nav-link " data-bs-toggle="modal" data-bs-target="#exampleModal" >Registrate</a>  
+       
+         
+              </li>
+
+            </div>
+            
           </ul>
       </div>
   </div>
 </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title fs-5" id="exampleModalLabel"> Registrate</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="formInsert">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Correo" id="txtCorreo">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Contraseña" id="txtContrasena">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="login.ts"></script>
 
 
 

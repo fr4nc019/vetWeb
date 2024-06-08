@@ -1,0 +1,38 @@
+
+
+
+footer{
+    background-color: #393D72;
+}
+
+footer h3{
+    font-family: var(--text-tittle);
+    font-weight: 700;
+    color: white;
+}
+footer h5{
+    font-family: var(--text-tittle);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.521);
+    font-size: medium;
+    padding-top: 15px;
+}
+footer h5:hover{
+    color: white;
+}
+footer p{
+    color: white;
+    font-family: var(--text-tittle);
+    font-weight: 400;
+}
+
+.button-pink{
+    background-color: var(--color-2);
+    color: white;
+    font-family: var(--text-tittle);
+    font-weight: 500;
+}
+.button-pink:hover{
+    background-color: var(--color-3);
+} 
+

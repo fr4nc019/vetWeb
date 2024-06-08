@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 
@@ -11,4 +12,5 @@ export const routes: Routes = [
     {title: 'MascotVet | Contact',path: 'contact',component: ContactComponent},
     {title: 'MascotVet | About',path: 'about',component: AboutComponent},
     {title: 'MascotVet | Login',path: 'login',component: LoginComponent},
+    {title: 'MascotVet | UserProfile',path: 'userprofile',component: UserProfileComponent},
 ];

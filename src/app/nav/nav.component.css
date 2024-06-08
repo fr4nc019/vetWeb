@@ -50,3 +50,8 @@ a{
     text-align: center;
     border-color: black;
 }
+
+.btn-login{
+    display: flex;
+    
+}
